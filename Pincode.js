@@ -1,5 +1,5 @@
-let PIN_Regex = RegExp('^[0-9]{1}[0-9]{4,4}[0-9]{1}$');
-let sample = "400088B";
+let PIN_Regex = RegExp('^[0-9]{3,3}[ ]?[0-9]{3,3}$');
+let sample = "400 088";
 ValidatePincode(sample,PIN_Regex);
 function ValidatePincode(pin,PIN_Regex)
 {
